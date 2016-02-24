@@ -1,0 +1,6 @@
+This program demonstrates how to build a simple job control system with vert.x.
+
+This system contains a worker controller verticle, which controls worker verticles.
+After the controller is established, it will deploy workers as 'worker verticles' and
+send virtual jobs to them. When all jobs dispatched, the controller will monitor the
+progress of the last running jobs, and end vertx system properly.
